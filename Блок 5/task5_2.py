@@ -32,6 +32,6 @@ with open(filename, "r", encoding="utf-8") as f:
     for row in reader:
         if name in row["Автор"]:
             found = True
-            print(row["Книга"])
+            print(row["Книга"], row["Автор"], sep=", ")
     if not found:
         print("Книги не найдены.")
