@@ -1,6 +1,6 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 alphabet_rot13 = "nopqrstuvwxyzabcdefghijklm"
-d = {a:b for a, b in zip(alphabet, alphabet_rot13)}
+d = {a : b for a, b in zip(alphabet, alphabet_rot13)}
 print(d)
 
 text = input("Enter some text to encode: ")

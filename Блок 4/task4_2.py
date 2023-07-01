@@ -7,6 +7,7 @@ def is_plalindrome(text):
             return False
     return True
 
+
 a = input()
 
 # Используем множество, чтобы избежать дубликтов
