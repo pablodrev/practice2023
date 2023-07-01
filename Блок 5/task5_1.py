@@ -10,6 +10,7 @@ rows = [["Чистый код", "Роберт Мартин", "2021"],
 
 filename = "prog_books.csv"
 
+# Запись в файл сначала заголовка, а затем и строк таблицы
 with open(filename, "w", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(header)
