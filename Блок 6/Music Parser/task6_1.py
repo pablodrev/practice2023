@@ -17,7 +17,7 @@ while True:
 # Парсинг HTML
 soup = BeautifulSoup(response.text, "lxml")
 artist_name = soup.find("h1", class_="page-artist__title").text
-songs = soup.find_all("div", class_="d-track__name")
+songs = soup.find_all("a", class_="d-track__title deco-link deco-link_stronger")
 
 # Вывод песен
 print(f"10 самых популярных треков исполнителя {artist_name}: ")
