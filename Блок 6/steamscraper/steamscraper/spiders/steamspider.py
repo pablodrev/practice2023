@@ -21,8 +21,10 @@ class SteamspiderSpider(scrapy.Spider):
             url_clean = url.split(sep, 1)[0]
             # Go to game`s url to collect tags with self.get_tags() method
             # Also cookies are used to bypass age restriction
-            yield response.follow(url_clean, cookies={"birthtime": 880909201,
-                                                      "wants_mature_content": 1}, callback=self.get_tags)
+            yield response.follow(url_clean,
+                                  cookies={"birthtime": 880909201,
+                                           "wants_mature_content": 1},
+                                  callback=self.get_tags)
 
         # Parse only first 40 pages.
         # Each page contains 25 games,
