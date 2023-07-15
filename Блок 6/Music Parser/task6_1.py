@@ -20,6 +20,6 @@ artist_name = soup.find("h1", class_="page-artist__title").text
 songs = soup.find_all("a", class_="d-track__title deco-link deco-link_stronger")
 
 # Вывод песен
-print( f"10 самых популярных треков исполнителя {artist_name}: " )
+print(f"10 самых популярных треков исполнителя {artist_name}: ")
 for i in range(10):
     print(f"{i+1}. - {songs[i].text}")

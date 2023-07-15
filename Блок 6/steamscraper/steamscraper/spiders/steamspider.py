@@ -41,7 +41,7 @@ class SteamspiderSpider(scrapy.Spider):
         # Get tags
         tags = response.css("a.app_tag")
         name = response.css("div.apphub_AppName::text").get()
-        # If game page contains not a single game, 
+        # If game page contains not a single game,
         # but a bundle, it`s name is located in h2
         if name is None:
             name = response.css("h2.pageheader::text").get()
