@@ -3,7 +3,7 @@ import random
 colors = ["Синий", "Зеленый", "Красный", "Оранжевый", "Фиолетовый"]
 print("Номера цветов: ")
 for i in range(len(colors)):
-    print(str(i+1) + ". " + colors[i])
+    print(str(i + 1) + ". " + colors[i])
 
 correct = random.randint(1, len(colors))
 while True:
